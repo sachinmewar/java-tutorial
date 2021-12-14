@@ -1,16 +1,14 @@
 
    In Java String is a sequence of character.
+
    But unlike other programming languages like C and C++ which takes string as a character array,
    In java String is an object of type String.
-   
-   String str = new String();
 
-   String in Java is immutable, each time you need an altered version of an existing string,
-   a new String object is created that contains the modifications. The original string is left unchanged.
+   String in Java is immutable, each time you make changes to an existing string, a new String object is
+   created that contains the modifications. The original string is left unchanged.
    This approach is used because immutable strings can be implemented more efficiently than changeable ones.
 
-   For those cases in which a modifiable string is desired, Java provides two options:
-   StringBuffer and StringBuilder.
+   Java provides two options for modifiable String: StringBuffer and StringBuilder.
    Both hold strings that can be modified after they are created.
 
    The String, StringBuffer, and StringBuilder classes are defined in java.lang.
@@ -18,28 +16,24 @@
    All are declared final, which means that none of these classes may be subclassed. This
    allows certain optimizations that increase performance to take place on common string operations.
 
-    All three implement the CharSequence interface.
+   All three implement the CharSequence interface.
 
 
-   The String Constructors
+   The String Constructors :
 
-   The String class supports several constructors. To create an empty String, call
-   the default constructor. For example,
-   String s = new String();
-   will create an instance of String with no characters in it.
-   Frequently, you will want to create strings that have initial values. The
-   String class provides a variety of constructors to handle this. To create a
-   String initialized by an array of characters, use the constructor shown here:
-   String(char chars[ ])
-   Here is an example:
-   This constructor initializes s with the string "abc".
-   You can specify a subrange of a character array as an initializer using the
-   following constructor:
-   String(char chars[ ], int startIndex, int numChars)
-   Here, startIndex specifies the index at which the subrange begins, and
-   numChars specifies the number of characters to use. Here is an example:
-   This initializes s with the characters cde.
-   You can construct a String object that contains the same character sequence
-   as another String object using this constructor:
-   String(String strObj)
-   Here, strObj is a String object.
+   1) Creating empty String :
+      String str = new String();
+      This will create an instance of String with no characters in it.
+
+   2) Creating a String by initializing an array of characters:
+      String(char charArray[ ])
+
+   3) Creating a String object with another String object:
+      String(String someStringObject)
+
+   -> String Length: It is the number of characters in a String and can be found out by stringName.length() method.
+
+   * String Literals :
+
+    For each string literal in your program, Java automatically constructs a String object.
+    Thus, you can use a string literal to initialize a String object.
