@@ -23,5 +23,20 @@ public class String1 {
         byte ascii[] = { 65, 97, 66, 98, 67, 99};
         String str5 = new String(ascii);
         System.out.println("str5 -> " + str5);
+
+        // Printing String length
+        System.out.println("str5 length is -> " + str5.length());
+
+        // String literals
+        // We can directly apply String methods to a string without creating a string object
+        // For each string literal in your program, Java automatically constructs a String object.
+        System.out.println("Length of the word programmer is -> " + "programmer".length());
+
+        // String Concatenation
+        // + operator is used to concatenate strings
+        String firstName = "Sachin ";
+        String lastName = "Mewar ";
+        int age = 23;
+        System.out.println(firstName + lastName + "age is " + age);
     }
 }
