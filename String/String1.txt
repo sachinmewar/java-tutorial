@@ -1,6 +1,7 @@
 
    In Java String is a sequence of character.
-   But unlike other prog. languages like C and C++ which takes string as a character array, In java String is an object of type String.
+   But unlike other programming languages like C and C++ which takes string as a character array,
+   In java String is an object of type String.
    
    String str = new String();
 
@@ -11,4 +12,34 @@
    For those cases in which a modifiable string is desired, Java provides two options:
    StringBuffer and StringBuilder.
    Both hold strings that can be modified after they are created.
-   
+
+   The String, StringBuffer, and StringBuilder classes are defined in java.lang.
+
+   All are declared final, which means that none of these classes may be subclassed. This
+   allows certain optimizations that increase performance to take place on common string operations.
+
+    All three implement the CharSequence interface.
+
+
+   The String Constructors
+
+   The String class supports several constructors. To create an empty String, call
+   the default constructor. For example,
+   String s = new String();
+   will create an instance of String with no characters in it.
+   Frequently, you will want to create strings that have initial values. The
+   String class provides a variety of constructors to handle this. To create a
+   String initialized by an array of characters, use the constructor shown here:
+   String(char chars[ ])
+   Here is an example:
+   This constructor initializes s with the string "abc".
+   You can specify a subrange of a character array as an initializer using the
+   following constructor:
+   String(char chars[ ], int startIndex, int numChars)
+   Here, startIndex specifies the index at which the subrange begins, and
+   numChars specifies the number of characters to use. Here is an example:
+   This initializes s with the characters cde.
+   You can construct a String object that contains the same character sequence
+   as another String object using this constructor:
+   String(String strObj)
+   Here, strObj is a String object.
