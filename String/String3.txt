@@ -1,3 +1,43 @@
 
  * Comparing Strings:
 
+  * equals( ) and equalsIgnoreCase( )
+    * To compare two strings for equality.
+    * General form: boolean equals(Object str)
+    * Here str is being compared with the invoking String object.
+    * Comparison is case-sensitive.
+
+  * equalsIgnoreCase( )
+    * consider A-Z to be the same as a-z.
+    * General form: boolean equalsIgnoreCase(String str)
+
+  * startsWith( ) and endsWith( ):
+    * The startsWith( ) method determines whether a given String begins with a specified string.
+    * general forms: boolean startsWith(String str)
+    * A second form of startsWith( ), let you specify a starting point: boolean startsWith(String str, int startIndex)
+    * The endsWith( ) determines whether a given String ends with a specified string.
+    * general forms: boolean endsWith(String str)
+
+  * equals() vs ==
+    * equals() method compares characters inside a String object.
+    * == will compare the reference of two object to check weather they refer to same instance.
+    * As just explained, the equals( ) method compares the characters inside a String object.
+
+  * compareTo( )
+    * The compareTo() method will compare two String on the basis of dictionary order.
+    * general form: int compareTo(String str), here str is compared with the invoking string.
+    * A string is less than another if it comes before the other in dictionary order and the result will be less than 0.
+    * A string is greater than another if it comes after the other in dictionary order and the result will be greater than 0.
+    * It is specified by the Comparable<T> interface, which String implements.
+    * compareToIgnoreCase( ) ignores case differences when comparing two strings.
+
+  * regionMatches( )
+    * compares a specific region inside a string with another specific region in another string.
+    * general form: boolean regionMatches(int startIndex, str2, str2Index, int numChars)
+    * For ignoreCase: boolean regionMatches(boolean ignoreCase, int startIndex, str2, str2Index, int numChars)
+    * startIndex specifies the index at which the region begins within the invoking String object.
+    * The String being compared is specified by str2.
+    * The index at which the comparison will start within str2 is specified by str2StartIndex.
+    * The length of the substring being compared is passed in numChars.
+    * If ignoreCase is true, the case of the characters is ignored. Otherwise, case is significant.
+
