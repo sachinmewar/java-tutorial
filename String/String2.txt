@@ -1,0 +1,25 @@
+
+* Character Extraction from String :
+
+ * charAt( ) :
+   * To extract a single character from a String.
+   * It has this general form: char charAt(int index)
+   * The value of index must be non-negative and specify a location within the string.
+
+ * getChars( ) :
+   * To extract more than one character at a time.
+   * general form: void getChars(int sourceStart, int sourceEnd, char target[ ], int targetStart)
+   * sourceStart -> index of the beginning of the substring, and
+   * sourceEnd -> specifies an index that is one past the end of the desired substring.
+   * target -> The array that will receive the characters.
+   * The index within target at which the substring will be copied is passed in targetStart.
+
+ * getBytes( )
+   * Stores characters in an array of bytes.
+   * Uses the default character-to-byte conversions provided by the platform.
+   * General form: byte[ ] getBytes( )
+   * Most useful when you are exporting a String value into an environment that does not support 16-bit Unicode characters.
+
+ * toCharArray( )
+   * Convert all the characters in a String object into a character array.
+   * general form: char[ ] toCharArray( )
