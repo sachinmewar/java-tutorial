@@ -1,0 +1,14 @@
+
+   In Java String is a sequence of character.
+   But unlike other prog. languages like C and C++ which takes string as a character array, In java String is an object of type String.
+   
+   String str = new String();
+
+   String in Java is immutable, each time you need an altered version of an existing string,
+   a new String object is created that contains the modifications. The original string is left unchanged.
+   This approach is used because immutable strings can be implemented more efficiently than changeable ones.
+
+   For those cases in which a modifiable string is desired, Java provides two options:
+   StringBuffer and StringBuilder.
+   Both hold strings that can be modified after they are created.
+   
