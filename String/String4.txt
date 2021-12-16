@@ -1,0 +1,40 @@
+
+ * Searching Strings:
+   * indexOf( ) Searches for the first occurrence of a character or substring.
+   * lastIndexOf( ) Searches for the last occurrence of a character or substring.
+   * The methods return the index at which the character or substring was found, or –1 on failure.
+   * int indexOf(String str)
+   * int lastIndexOf(String str)
+   * You can specify a starting point for the search using these forms:
+   * int indexOf(int ch, int startIndex)
+   * int indexOf(String str, int startIndex)
+   * Here, startIndex specifies the index at which point the search begins.
+   * For indexOf( ), the search runs from startIndex to the end of the string.
+   * For lastIndexOf( ), the search runs from startIndex to zero.
+
+ * Modifying a String
+
+   * substring( )
+     * You can extract a substring using substring( ).
+     * String substring(int startIndex)
+     * String substring(int startIndex, int endIndex)
+     * The string returned does not contain the ending index.
+
+   * concat( )
+     * String concat(String str)
+     * concat( ) performs the same function as +.
+
+   * replace( )
+     * The first form replaces all occurrences of one character in the invoking string with another character.
+     * General form: String replace(char original, char replacement)
+     * The second form of replace( ) replaces one character sequence with another.
+     * General form: String replace(CharSequence original, CharSequence replacement)
+
+   * trim( ) and strip( )
+    * In trim( ) method leading and trailing spaces will be removed.
+    * general form: String trim( )
+    * Beginning with JDK 11, Java provides strip( ) method, which removes all whitespace characters(as defined by Java)
+    * Such whitespace characters include, among others, spaces, tabs, carriage returns, and line feeds.
+    * General form: String strip( )
+    * Methods like stripLeading( ) and stripTrailing(),deletes whitespace characters from the start or end respectively.
+
