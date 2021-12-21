@@ -38,3 +38,33 @@
     * General form: String strip( )
     * Methods like stripLeading( ) and stripTrailing(),deletes whitespace characters from the start or end respectively.
 
+   * Data Conversion Using valueOf( )
+    * The valueOf( ) method converts data from its internal format into a human-readable form.
+    * It is a static method overloaded within String for all of Java’s built-in types so that each type can be converted
+      into a string.
+    * valueOf( ) is also overloaded for type Object (superclass for all classes), so an object of any class type
+      you create can also be used as an argument. Here are a few of its forms:
+
+    * static String valueOf(double num)
+    * static String valueOf(long num)
+    * static String valueOf(Object ob)
+    * static String valueOf(char chars[ ])
+
+    * Any object that you pass to valueOf( ) will return the result of a call to the object’s toString( ) method.
+    * In fact, you could just call toString( ) directly and get the same result.
+    * For most arrays, valueOf( ) returns a rather cryptic string, which indicates that it is an array of some type.
+    * There is a special version of valueOf( ) that allows you to specify a subset of a char array. It has this
+      general form:
+    * static String valueOf(char chars[ ], int startIndex, int numChars)
+
+  * Changing case of a String:
+    * The method toLowerCase( ) converts all the characters in a string from uppercase to lowercase.
+    * The toUpperCase( ) method converts all the characters in a string from lowercase to uppercase.
+    * General Form: String toLowerCase( )
+    * General Form: String toUpperCase( )
+
+  * Joining String:
+    * JDK 8 added a new method to String called join().
+    * It is used to concatenate two or more strings, separating each string with a delimiter
+    * Its first is shown here:
+    * General Form: static String join(CharSequence delim, CharSequence . . . strs)
