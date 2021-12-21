@@ -16,5 +16,14 @@ public class String4 {
         // Extracting  a substring from string....
         System.out.println(str.substring(26));
         System.out.println(str.substring(34, 42));
+
+        // concatinating 2 strings
+        String str1 = new String("Sachin");
+        String str2 = new String("Mewar");
+        System.out.println(str1.concat(str2));
+
+        // replacing all occurance of one character with another.
+        String tempStr = new String("Praztize makes man perfezt");
+        System.out.println("Using replace rethod --> " + tempStr.replace('z', 'c'));
     }
 }
