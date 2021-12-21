@@ -25,5 +25,25 @@ public class String4 {
         // replacing all occurance of one character with another.
         String tempStr = new String("Praztize makes man perfezt");
         System.out.println("Using replace rethod --> " + tempStr.replace('z', 'c'));
+
+        // Using trim and strip method
+        String quote = new String("  The future belongs to those who believe in the beauty of their dreams    ");
+        System.out.println(quote);
+        System.out.println(quote.trim());
+        System.out.println(quote.strip());
+
+        int tempVar = 10;
+        String tempString = String.valueOf(tempVar);
+        System.out.println(tempString + 10);
+
+        // Changing case of a String...
+        quote = "Great minds discuss ideas; average minds discuss events; small minds discuss people";
+        System.out.println(quote.toUpperCase());
+
+        // Using join...
+        quote = String.join(" ", "Sing", "like", "no", "one\'s", "listening,", "love", "like", "you\'ve",
+                "never", "been", "hurt,", "dance", "like", "nobody\'s", "watching,", "and", "live", "like",
+                "it\'s", "heaven", "on", "earth.");
+        System.out.println(quote);
     }
 }
