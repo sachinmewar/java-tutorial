@@ -12,5 +12,9 @@ public class String4 {
         System.out.println("indexOf(t, 25) -> " + str.indexOf('t', 25));
         System.out.println("indexOf(t, 30) -> " + str.indexOf('t', 30));
         System.out.println("lastIndexOf(t, 30) -> " + str.lastIndexOf('t', 30));
+
+        // Extracting  a substring from string....
+        System.out.println(str.substring(26));
+        System.out.println(str.substring(34, 42));
     }
 }
