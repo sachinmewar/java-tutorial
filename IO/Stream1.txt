@@ -16,8 +16,6 @@
    * BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
     After this statement executes, br is a character-based stream that is linked to the console through System.in.
 
-
-
  * Reading Characters:
    * To read a character from a BufferedReader, use read( ).
    * The version of read( ) that we will be using is: int read( ) throws IOException.
