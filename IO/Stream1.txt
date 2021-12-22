@@ -1,0 +1,28 @@
+
+ * Reading Console Input:
+   * The preferred method of reading console input is to use a character-oriented stream.
+   * This makes your program easier to internationalize and maintain.
+   * In Java, console input is accomplished by reading from System.in.
+   * To obtain a character-based stream that is attached to the console, wrap System.in, in a BufferedReader object.
+   * BufferedReader(Buffered Input character Stream) supports a buffered input stream.
+   * General Form: BufferedReader(Reader inputReader)
+   * Here, inputReader is the stream that is linked to the instance of BufferedReader that is being created.
+   * Reader is an abstract class. One of its subclass is InputStreamReader, which converts bytes to characters.
+   * To obtain an InputStreamReader object that is linked to System.in, use the following constructor:
+     InputStreamReader(InputStream inputStream)
+   * Because System.in refers to an object of type InputStream, it can be used for inputStream.
+
+   * The following line of code creates a BufferedReader that is connected to the keyboard:
+   * BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+    After this statement executes, br is a character-based stream that is linked to the console through System.in.
+
+
+
+ * Reading Characters:
+   * To read a character from a BufferedReader, use read( ).
+   * The version of read( ) that we will be using is: int read( ) throws IOException.
+   * Each time that read( ) is called, it reads a character from the input stream and returns it as an integer value.
+   * It returns –1 when an attempt is made to read at the end of the stream.
+   * Any I/O exceptions that might be generated are simply thrown out of main( ).
+   * System.in is line buffered, by default. This means that no input is actually passed to the program until you
+     press enter. This does not make read( ) particularly valuable for interactive console input.
