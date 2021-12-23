@@ -22,13 +22,20 @@
          // reading from file...
          try {
              do{
-                 i =  fin.readLine();
+                 i =  fin.read();
                  if(i != -1){
                      System.out.println((char)i);
                  }
              }while(i != -1);
          }catch(IOException e){
              System.out.println(e);
+         }
+
+         try{
+             fin.close();
+             System.out.println("File closed successfully");
+         }catch (IOException e){
+             System.out.println("Error closing file");
          }
      }
  }
