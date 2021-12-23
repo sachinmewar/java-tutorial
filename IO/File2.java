@@ -25,19 +25,19 @@
          }catch(IOException e){
              System.out.println("IO Exception Occured..." + e);
          }finally {
-             if(fin != null){
-                 try{
+             try{
+                 if(fin != null){
                      fin.close();
-                 }catch(IOException e){
-                     System.out.println(e);
                  }
+             }catch(IOException e){
+                 System.out.println(e);
              }
-             if(fout != null){
-                 try{
+             try{
+                 if(fout != null){
                      fout.close();
-                 }catch(IOException e){
-                     System.out.println(e);
                  }
+             } catch(IOException e){
+                 System.out.println(e);
              }
          }
      }
