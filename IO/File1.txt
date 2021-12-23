@@ -1,0 +1,32 @@
+
+  * Reading and Writing Files:
+    * Two of the most often-used stream classes are FileInputStream and FileOutputStream, which create byte streams
+      linked to file.
+    * General Form: FileInputStream(String fileName) throws FileNotFoundException
+    * General Form: FileOutputStream(String fileName) throws FileNotFoundException
+    * When you create an input stream, if the file does not exist, then FileNotFoundException is thrown.
+    * For output streams, if the file cannot be opened or created, then FileNotFoundException is thrown.
+    * FileNotFoundException is a subclass of IOException. When an output file is opened, any preexisting file by the
+      same name is destroyed.
+    * When you are done working with a file, you must close it by calling the close( ) method.
+    * General Form: void close( ) throws IOException
+    * Closing a file releases the system resources allocated to the file, allowing them to be used by another file.
+    * Failure to close a file can result in “memory leaks” because of unused resources remaining allocated.
+    * The close( ) method is specified by the AutoCloseable interface in java.lang.
+    * AutoCloseable is inherited by the Closeable interface in java.io.
+    * Both interfaces are implemented by the stream classes, including FileInputStream and FileOutputStream.
+
+    * There are two basic approaches to close a file.
+    * The first is the traditional approach, in which close( ) is called explicitly when the file is no longer needed.
+    * This is the approach used by all versions of Java prior to JDK 7.
+    * The second is to use the try-with-resources statement added by JDK 7, which automatically closes a file
+      when it is no longer needed.  In this approach, no explicit call to close( ) is executed.
+    * To read from a file, you can use a version of read( ) that is defined within FileInputStream.
+    * General Form: int read( ) throws IOException
+    * Each time that it is called, it reads a single byte from the file and returns the byte as an integer value.
+      read( ) returns –1 when an attempt is made to read at the end of the stream. It can throw an IOException.
+
+
+    * In situations in which a security manager is present, several of the file classes, including FileInputStream and
+      FileOutputStream, will throw a SecurityException if a security violation occurs when attempting to open a file.
+      By default, applications run via java do not use a security manager.
