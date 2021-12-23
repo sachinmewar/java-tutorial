@@ -3,7 +3,7 @@
 
  public class File1{
      public static void main(String[] args) {
-         FileInputStream fin;
+         FileInputStream fin = null;
          int i = -1;
          // Checking weather fileName is specified...
          if(args.length != 1){
@@ -14,28 +14,25 @@
          // Attempt to open a file...
          try{
              fin = new FileInputStream(args[0]);
-         }catch (FileNotFoundException e){
-             System.out.println("Cannot open file because of given exception : " + e);
-             return;
-         }
-
-         // reading from file...
-         try {
+             // reading from file...
              do{
                  i =  fin.read();
                  if(i != -1){
                      System.out.println((char)i);
                  }
              }while(i != -1);
-         }catch(IOException e){
+         } catch(FileNotFoundException e){
+         System.out.println("Cannot open file because of given exception : " + e);
+         return;
+     }catch(IOException e){
              System.out.println(e);
-         }
-
-         try{
-             fin.close();
-             System.out.println("File closed successfully");
-         }catch (IOException e){
-             System.out.println("Error closing file");
+         }finally{
+             try{
+                 fin.close();
+                 System.out.println("File closed successfully");
+             }catch(IOException e){
+             System.out.println("Unable to close file....");
+             }
          }
      }
  }
