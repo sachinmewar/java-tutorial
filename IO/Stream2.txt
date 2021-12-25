@@ -1,5 +1,4 @@
 
  * Reading Strings:
-   * To read a string from the keyboard, use the version of readLine( ) that is a member of the BufferedReader class.
-   * General form: String readLine( ) throws IOException
-   
+   * To read a string from the keyboard, use readLine( ) which is a member of the BufferedReader class.
+   * General form: String readLine( ) throws IOException.
