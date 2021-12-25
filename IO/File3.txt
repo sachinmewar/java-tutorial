@@ -1,0 +1,31 @@
+
+  * Automatically Closing a File:
+    * JDK 7 added a feature by automating the closing process.
+    * This feature, sometimes referred to as automatic resource management(ARM)
+    * The principal advantage of automatic resource management is that it prevents situations in which a
+      file(or other resource) is inadvertently not released after it is no longer needed.
+    * Automatic resource management is based on an expanded form of the try statement.
+    * General form: try(resource-specification){}
+    * Typically, resource-specification is a statement that declares and initializes aresource, such as a file stream.
+    * When the try block ends, the resource is automatically released.
+    * This form of try is called the try-with-resources statement.
+    * From JDK 9, it is also possible for the resource specification of the try to consist of a variable that has been
+      declared and initialized earlier in the program. However, that variable must be final.
+    * The try-with-resources statement can be used only with those resources that implement the AutoCloseable interface
+      defined by java.lang. This interface defines the close( ) method. AutoCloseable is inherited by the Closeable
+      interface in java.io. Both interfaces are implemented by the stream classes.
+    * The resource declared in the try statement is implicitly final. Also, the scope of the resource is limited to
+      the try-with-resources statement.
+    * From JDK 10, you can use local variable type inference to specify the type of the resource declared in a
+      try-with-resources statement. To do so, specify the type as var.
+      When this is done, the type of the resource is inferred from its initializer.
+    * For example: try(var fin = new FileInputStream(args[0])) { }
+      Here, fin is inferred to be of type FileInputStream because that is the type of its initializer.
+    * It is possible to manage more than one resource within a single try statement by separating each
+      resource-specification with semicolon.
+    * In general, when a try block executes, it is possible that an exception inside the try block will lead to
+      another exception that occurs when the resource is closed in a finally clause. In the case of a “normal” try
+      statement, the original exception is lost, being preempted by the second exception. However, when
+      using try-with-resources, the second exception is suppressed. It is not, however, lost. Instead, it is added to
+      the list of suppressed exceptions associated with the first exception. The list of suppressed exceptions can be
+      obtained by using the getSuppressed( ) method defined by Throwable.
