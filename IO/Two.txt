@@ -1,7 +1,0 @@
-
-  * Writing to a file:
-    * To write to a file, the write( ) method defined by FileOutputStream can be used.
-    * General Form:  void write(int byteval) throws IOException.
-    * This method writes the byte specified by byteval to the file. Although byteval is declared as an integer,
-      only the low-order eight bits are written to the file.
-    * If an error occurs during writing, an IOException is thrown.
