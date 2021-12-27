@@ -29,3 +29,22 @@
       using try-with-resources, the second exception is suppressed. It is not, however, lost. Instead, it is added to
       the list of suppressed exceptions associated with the first exception. The list of suppressed exceptions can be
       obtained by using the getSuppressed( ) method defined by Throwable.
+
+  * The transient and volatile Modifiers:
+    * When an instance variable is declared as transient, its value need not persist when an object is stored.
+    * For example:
+      Class Trans{
+       transient int val1;
+       int val2;
+      }
+    * The content of val1 would not be saved, but the contents of val2 would.
+    * The volatile modifier tells the compiler that the variable modified by volatile can be changed unexpectedly by
+      other parts of your program. For e.g. multithreaded programs.
+    * In a multithreaded program, sometimes two or more threads share the same variable. For efficiency
+      considerations, each thread can keep its own, private copy of such a shared variable.
+    * The real(or master) copy of the variable is updated at various times, such as when a synchronized method is
+      entered. While this approach works fine, it may be inefficient at times. In some cases, all that really matters
+      is that the master copy of a variable always reflects its current state. To ensure this, simply specify the
+      variable as volatile, which tells the compiler that it must always use the master copy of a volatile variable
+      (or, at least, always keep any private copies up-to-date with the master copy, and vice versa). Also, accesses
+      to the shared variable must be executed in the precise order indicated by the program.
