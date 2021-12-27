@@ -1,0 +1,62 @@
+
+ * Streams
+   * Java programs perform I/O through streams.
+   * A stream is an abstraction that either produces or consumes information.
+   * A stream is linked to a physical device by the Java I/O system.
+   * All streams behave in the same manner, even if the actual physical devices to which they are linked differ.
+   * Java implements streams within class hierarchies defined in the java.io package.
+
+ * Byte Streams and Character Streams
+   * Java defines two types of streams: byte and character.
+   * Byte streams provide a convenient means for handling input and output of bytes.
+   * Character streams provide a convenient means for handling input and output of characters.
+   * Character streams were added by Java 1.1.
+   * At the lowest level, all I/O is still byte-oriented.
+
+ * Byte Stream class
+   * Byte streams are defined by using two class hierarchies. At the top there are two abstract classes: InputStream
+     and OutputStream.
+   * InputStream, OutputStream
+   * BufferedInputStream: Buffered Input stream.
+   * BufferedOutputStream: Buffered Output stream.
+   * ByteArrayInputStream, ByteArrayOutputStream
+   * DataInputStream, DataOutputStream
+   * FileInputStream, FileOutputStream
+   * FilterInputStream, FilterOutputStream
+   * ObjectInputStream, ObjectOutputStream
+   * PipedInputStream, PipedOutputStream
+   * PrintStream
+   * PushbackInputStream
+   * SequenceInputStream
+
+   * The abstract classes InputStream and OutputStream define several key methods that the other stream classes implement.
+   * Two of the most important are read( ) and write( ), which, respectively, read and write bytes of data.
+   * Each has a form that is abstract and must be overridden by derived stream classes.
+
+ * The Character Stream Classes
+   * At the top are there are two abstract classes: Reader and Writer.
+   * These abstract classes handle Unicode character streams.
+
+   * Reader, Writer
+   * BufferedReader: Buffered Input character stream.
+   * BufferedWriter
+   * FileReader, FileWriter
+   * CharArrayReader, CharArrayWriter
+   * FilterReader, FilterWriter
+   * InputStreamReader, OutputStreamWriter
+   * LineNumberReader
+   * PipedReader, PipedWriter
+   * PrintWriter
+   * PushbackReader
+   * StringReader, StringWriter
+
+ * The Predefined Streams:
+   * All Java programs automatically import the java.lang package.
+   * This package defines a class called System, which encapsulates several aspects of the run-time environment.
+   * System also contains three predefined stream variables: in, out, and err. These fields are declared as public,
+     static, and final within System.
+   * System.out refers to the standard output stream. By default, this is the console.
+   * System.in refers to standard input, which is the keyboard by default.
+   * System.err refers to the standard error stream, which also is the console by default.
+   * System.in is an object of type InputStream; System.out and System.err are objects of type PrintStream.
+   * These are byte streams, even though they are typically used to read and write characters from and to the console.
