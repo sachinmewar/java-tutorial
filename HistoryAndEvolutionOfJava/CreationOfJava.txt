@@ -1,0 +1,26 @@
+ * The Creation of Java:
+   * Java was conceived by James Gosling, Patrick Naughton, Chris Warth, Ed Frank, and Mike Sheridan at Sun Microsystems, Inc.
+     in 1991. It took 18 months to develop the first working version.
+   * This language was initially called “Oak,” but was renamed “Java” in 1995.
+   * The primary motivation of Java was the need for a platform-independent language that could be used to create
+     software to be embedded in various consumer electronic devices, such as microwave ovens and remote controls.
+   * The trouble with C and C++ is that they are designed to be compiled for a specific target.
+   * Although it is possible to compile a C++ program for just about any type of CPU, to do so requires a full C++
+     compiler targeted for that CPU.
+   * The problem is that compilers are expensive and time-consuming to create.
+   * Java might have remained a useful but obscure language for programming consumer electronics. However, with the
+     emergence of the World Wide Web, Java was propelled to the forefront of computer language design,
+     because the Web, too, demanded portable programs.
+   * At that time much of the computer world had divided itself into the three competing camps of Intel, Macintosh,
+     and UNIX, most programmers stayed within their fortified boundaries, and the urgent need for
+     portable code was reduced.
+   *  However, with the advent of the Internet and the Web, the old problem of portability returned with a vengeance.
+      After all, the Internet consists of a diverse, distributed universe populated with various types
+      of computers, operating systems, and CPUs.
+   * By 1993, it became obvious to members of the Java design team that the problems of portability frequently
+     encountered when creating code for embedded controllers are also found when attempting to create code for the
+     Internet.
+   *  In fact, the same problem that Java was initially designed to solve on a small scale could also be applied to the
+   Internet on a large scale.
+   * So, while the desire for an architecture-neutral programming language provided the initial spark, the Internet
+     ultimately led to Java’s large-scale success.
