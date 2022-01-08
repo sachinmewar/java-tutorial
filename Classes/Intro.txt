@@ -1,0 +1,11 @@
+The data, or variables, defined within a class are called instance variables.
+The code is contained within methods. Collectively, the methods and variables
+defined within a class are called members of the class. In most classes, the
+instance variables are acted upon and accessed by the methods defined for that
+class. Thus, as a general rule, it is the methods that determine how a class’ data
+can be used.
+Variables defined within a class are called instance variables because each
+instance of the class (that is, each object of the class) contains its own copy of
+these variables. Thus, the data for one object is separate and unique from the
+data for another. We will come back to this point shortly, but it is an important
+concept to learn early.
