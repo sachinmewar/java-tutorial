@@ -1,0 +1,10 @@
+
+  * Garbage Collection:
+    * Whenever the objects are allocated dynamically we do need to free them to release memory.
+    * In C++, dynamically allocated objects must be manually released by using delete operator.
+    * Java free your memory automatically by using a technique know as Garbage Collection.
+    * When no reference to an object exist, then that object cannot be used and is assumed to be no longer needed and the
+      memory occupied by the object can be reclaimed. There is no need to explicitly destroy objects.
+    * Garbage collection only occurs sporadically(if at all) during the execution of your program. It will not occur simply
+      because one or more objects exist that are no longer used. Furthermore, different Java run-time implementations will
+      take varying approaches to garbage collection.
