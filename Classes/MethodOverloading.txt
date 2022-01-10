@@ -1,0 +1,9 @@
+
+  * Method Overloading:
+    * In Java, it is possible to define two or more methods within the same class that share the same name, as long as their
+      parameter declarations are different this process is known as method overloading.
+    * Method overloading is one of the ways that Java supports polymorphism.
+    * When an overloaded method is invoked, Java uses the type and/or number of arguments to determine which overloaded
+      method to call. The return type alone is insufficient to distinguish two versions of a method.
+    * Method overloading supports polymorphism as it is one way that Java implements the “one interface, multiple methods”
+      paradigm.
