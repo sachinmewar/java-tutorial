@@ -1,0 +1,14 @@
+ * static
+   * A static member can be accessed before the creation of any objects of its class and without reference to any object.
+   * Both methods and variables can be declared as public.
+   * The most common
+   * The main( ) method is declared as static because it must be called before any objects exist.
+   * Instance variables declared as static are, essentially, global variables.
+   * Whenever objects of a class are declared, no copy of a static variable is made. Instead, all instances of the class
+     share the same static variable.
+   * Methods declared as static have several restrictions:
+     • They can only directly call other static methods of their class.
+     • They can only directly access static variables of their class.
+     • They cannot refer to this or super in any way.
+   * If you need to do computation in order to initialize your static variables, you can declare a static block that gets
+     executed exactly once, when the class is first loaded.

@@ -1,0 +1,10 @@
+
+  * Introducing final :
+    * final keyword is used to prevent the contents of a field from being modified, making it a constant.
+    * There are two ways to declare final field: First, give it a value when it is declared. Second,
+      assign it a value within a constructor.
+    * Both method parameters and local variables can be declared as final. Declaring a parameter final prevents it from
+      being changed within the method. Declaring a local variable final prevents it from being
+      assigned a value more than once.
+    * The keyword final can also be applied to methods, but its meaning is substantially different than when it is applied
+      to variables.

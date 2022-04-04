@@ -1,0 +1,6 @@
+
+ * Access Specifiers:
+   * Java’s access modifiers are public, private, protected and default.
+   * protected applies only when inheritance is involved (Only child class can access).
+   * When a member of a class is public, then that member can be accessed by any other code.
+   * When a member of a class is private, then that member can only be accessed by other members of its class.

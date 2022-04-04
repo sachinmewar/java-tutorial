@@ -1,0 +1,20 @@
+
+ * Introducing Nested and Inner Classes:
+   * Nested classes are those in which one class is defined within another class.
+   * The scope of a nested class is bounded by the scope of its enclosing class. Thus, if class B is defined within class
+     A, then B does not exist independently of A.
+   * A nested class has access to the members, including private members, of the class in which it is nested.
+   * However, the enclosing class does not have access to the members of the nested class. A nested class
+ that is declared directly within its enclosing class scope is a member of its
+ enclosing class. It is also possible to declare a nested class that is local to a
+ block.
+ There are two types of nested classes: static and non-static. A static nested
+ class is one that has the static modifier applied. Because it is static, it must
+ access the non-static members of its enclosing class through an object. That is,
+ it cannot refer to non-static members of its enclosing class directly. Because of
+ this restriction, static nested classes are seldom used.
+ The most important type of nested class is the inner class. An inner class is a
+ non-static nested class. It has access to all of the variables and methods of its
+ outer class and may refer to them directly in the same way that other non-static
+ members of the outer class do.
+ The following program illustrates
